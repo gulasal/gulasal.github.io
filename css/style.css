@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+.text_1 {
+    background-color: #ffffff;
+    height: 100px;
+
+}
+.container {
+    padding-top: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+ul li {
+    
+    list-style: none;
+}
+.nav_bar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.basic {
+    height: 320px;
+    background-color: #007d2f;
+    text-align: center;
+    margin: auto;
+   
+   
+}
+.main h1 {
+    font-size: 28px;
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 110px;
+    line-height: 60px;
+}
+.main p {
+    color: #fefefe;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container_fluid{
+    background-color: #007d2f;
+   
+}
+
+.container_fluid img:hover{
+    opacity: 40%;
+}
+.boshogriq{
+    display: flex;
+    flex-direction: column;
+}
+
+.ilgor{
+    width: 25%;
+    
+   
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+   
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.boshogriq {
+    display: flex;
+}
+  
+.ilgor:hover .image {
+    opacity: 50%;
+}
+
+  
+  
+.ilgor:hover .middle {
+    opacity: 50%;
+}
+  
+.text {
+    color: white;
+    font-size: 16px;
+    font-size: 26px;
+}
+.parent {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.first  {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.parent {
+    padding-left: 100px;
+}
+.lalala2 {
+    display: flex;
+   
+    list-style: none;
+}
+.lalala h3 { 
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.lalala p {
+    font-size: 15px;
+    font-weight: 100;
+    color: #929292;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.lalala1 ul li a {
+    font-size: 15px;
+    font-weight: 100;
+    color: #929292;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -30px;
+    
+}
+
+.lalala1 p{
+    font-size: 15px;
+    font-weight: 100;
+    color: #929292;
+    font-family: 'Montserrat', sans-serif;
+}
+.list1{
+    padding-right: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #929292;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* LG 992>1199 */
+@media (max-width: 1199px){
+    .text_1 .nav_bar ul li a {
+        font-size: 10px;
+    }
+    .first .lalala1 .lalala2 {
+        margin-right: 30px;
+    }
+    .first .lalala1 .lalala2 .list1 li{
+        font-size: 12px;
+    }
+}
+/* MD 768>991 */
+@media (max-width: 991px){
+    .text_1 .bir{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .basic .main h1 {
+        font-size: 20px;
+    }
+    .basic .main p {
+        font-size: 14px;
+    }
+    .parent h3 {
+        font-size: 14px;
+    }
+    .parent p {
+        font-size: 12px;
+    }
+    .parent .lalala1 ul li a {
+        font-size: 12px;
+    }
+    .first .lalala1 .lalala2 .list1 li {
+        font-size: 10px;
+    }
+    
+
+
+}
+/* SM  576>767 */
+@media (max-width: 767px){
+    body{
+        width: 100% !important;
+    }
+    
+    /* .text_1 .nav_bar ul li a{
+        font-size: 8px;
+    } */
+    
+     .logo img{
+        width: 30px;
+    }
+    .basic .main h1 {
+        font-size: 15px;
+    }
+    .basic .main p {
+        font-size: 10px;
+    }
+    .parent h3 {
+        font-size: 12px;
+    }
+    .parent p {
+        font-size: 10px;
+    }
+    .parent .boshogriq{
+        flex-wrap: wrap;
+      
+    }
+    .boshogriq .ilgor{
+        width: 100%;
+    }
+    .parent{
+        padding: 10% -10%;
+        flex-wrap: wrap;
+    }
+    
+    .parent .lalala1 ul li a {
+        font-size: 10px;
+    }
+    .first .lalala1 .list1 li {
+        font-size: 8px;
+    }
+    
+
+}
+/* xSM 320>575 */
+@media (max-width: 575px){
+    body {
+        width: 100% !important;
+
+    }
+    .nav_bar{
+        display: none;
+    }
+    .logo {
+        padding-left: 45%;
+    }
+    .logo img {
+        width: 25px;
+    }
+    .basic .main h1 {
+        font-size: 10px;
+    }
+    .basic .main p {
+        font-size: 6px;
+    }
+    .parent h3 {
+        font-size: 10px;
+    }
+    .parent p {
+        font-size: 8px;
+    }
+}
